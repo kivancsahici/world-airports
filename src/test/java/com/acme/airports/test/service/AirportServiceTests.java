@@ -33,8 +33,7 @@ public class AirportServiceTests {
        .andExpect(jsonPath("$.max[0].id").value("21501")).andExpect(jsonPath("$.max[0].name").value("United States"))
        .andExpect(jsonPath("$.max[0].runwayIdentifications").value("H1, 18, 9, 17, 16, 13, 8, 14, 15, 1"))
        .andExpect(jsonPath("$.max[1].id").value("3839")).andExpect(jsonPath("$.max[1].name").value("Brazil"))
-       .andExpect(jsonPath("$.max[1].runwayIdentifications").value("9, 18, 3, 12, 2, 6, 1, 7, 11, 10"))
-       .andExpect(jsonPath("$.max[1].runwayTypes").value("GVL, GRVL/PIÇ, ASP, CON, ASPH, TER, CONC/MTAL, PIÇ, GRVL, GRE, CON/ASP, CON/GRS, SAND, ASP/GRE, MET, CONC, GRS, GRASS, GRAVEL, SAI, ASPHALT, GRV, MTAL, GRE/GRS, UNK, WOOD, MET/CON, PIC, CON/MET, ASP/GRS, ARG"));
+       .andExpect(jsonPath("$.max[1].runwayIdentifications").value("9, 18, 3, 12, 2, 6, 1, 7, 11, 10"));
     }
 	
 	@Test
