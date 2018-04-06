@@ -16,7 +16,7 @@ public class CountryRepositoryImpl implements CountryRepositoryCustom {
 	@Override
 	@Transactional
 	public List<DTO> airportCount() {
-		List<DTO> list = em.createQuery("SELECT NEW com.acme.airports.model.DTO( COUNT(b.id), a.name) FROM Airport b, Country a  where a.code = b.iso_country GROUP BY a.name order by count(b.id) desc").getResultList();		
+		List<DTO> list = em.createQuery("SELECT NEW com.acme.airports.model.DTO( COUNT(b.id), a.name) FROM Country a LEFT JOIN Airport b ON a.code = b.iso_country GROUP BY a.name order by count(b.id) desc").getResultList();
 		return list;
 	}
 	
