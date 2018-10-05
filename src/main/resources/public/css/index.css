@@ -9,9 +9,11 @@ tr.shown td.details-control {
 
 /* Bootstrap */
 .jumbotron {
-	background-image:url('../resources/lunatech.png');
+	background-image:url('../resources/logo-acme-corp.png');
 	background-repeat: no-repeat;
 	background-position: center;	
+	background-color: #36538b !important;
+	background-size: contain;
 }
 
 .card {
@@ -53,4 +55,13 @@ tr.shown td.details-control {
 .carousel-item {
 	background-color: red;
 	height: 500px;
+}
+
+body {
+	background-color: #d1d1d2 !important;
+}
+
+.btn-primary {
+	background-color: #00aced !important;
+	border-color: #00aced !important;
 }
